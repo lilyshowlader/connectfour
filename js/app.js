@@ -26,20 +26,48 @@ let winningArray = [
   ]; 
 
 /*---------------------------- Variables (state) --------------------------*/
+// the variables below will change depending on user interaction 
 let board
+// the state of the board will change everytime the render function is called
 let playersTurn
+// 1 will represent player one and -1 will represent player 2.
+// ultimately I want player-one to be dark pink and player-two to be orange
 let winner
+// the winner can be player one/two or none depending on if game is still going/stalemate
 
 /*------------------------ Cached Element References ----------------------*/
 const slots = document.querySelectorAll("connect-four-board")
 // accessing all of the divs (slots) on the connect four board to manipulate (node list)
-
 const displayMessage = document.querySelector("#display-message")
 // accessing the display message to manipulate when it is player 1/2 turn/win/tie
-
 const resetButton = document.querySelector("#reset-button")
 // accessing the reset button to manipulate when user chooses to reset game
 
 /*--------------------------- Event Listeners -----------------------------*/
 
+
+
 /*------------------------------ Functions --------------------------------*/
+// When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user.
+// init()
+// render() - note* the render function should run every single time a move is made
+
+init()
+
+function init() {
+  board =[
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null]
+  playerTurn = 1
+  winner = null
+  render()
+}
+
+function render() {
+
+  
+}

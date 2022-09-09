@@ -4,7 +4,8 @@ Pseudo Code for Connect Four
 
 <!-- Set the required variables used to track the state of the game
 Board - we have to track the changes made on the Connect Four board as the game is in progress. 
-There are 42 slots on the ConnectFour board (6x7)
+There are 42 slots on the ConnectFour board (6x7) 
+Add 7 more divs to the BOTTOM of the connectFour board to act as the ground level 
 Turn - we have to track who’s turn it is/either player one or two.
 Winner - either player one or two will win or the game is still in progress (null) -->
 
@@ -17,9 +18,9 @@ When the game loads, initialize the state of the game and call a function to ren
 init()
 render() - note* the render function should run every single time a move is made
 
-Figure out the required constants for the game
+<!-- Figure out the required constants for the game
 Similar to tic-tac-toe, the constant for this game can be winningCombos.
-There are a million ways to win Connect Four, so I have to figure out how to display them all.
+There are a million ways to win Connect Four, so I have to figure out how to display them all. -->
 
 Build a handleClick function which will determine what happens with each click a player makes
 Player 1 clicks - pick a color for player one
