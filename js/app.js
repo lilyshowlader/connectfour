@@ -32,6 +32,14 @@ let winner
 
 /*------------------------ Cached Element References ----------------------*/
 const slots = document.querySelectorAll("connect-four-board")
+// accessing all of the divs (slots) on the connect four board to manipulate (node list)
+
+const displayMessage = document.querySelector("#display-message")
+// accessing the display message to manipulate when it is player 1/2 turn/win/tie
+
+const resetButton = document.querySelector("#reset-button")
+// accessing the reset button to manipulate when user chooses to reset game
+
 /*--------------------------- Event Listeners -----------------------------*/
 
 /*------------------------------ Functions --------------------------------*/
