@@ -29,7 +29,7 @@ let winningArrays = [
 // the variables below will change depending on user interaction 
 let board
 // the state of the board will change everytime the render function is called
-let playersTurn
+let playerTurn
 // 1 will represent player one and -1 will represent player 2.
 // ultimately I want player-one to be dark pink and player-two to be orange
 let winner
@@ -63,6 +63,7 @@ function init() {
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null]
+    console.log(board)
   playerTurn = 1
   winner = null
   render()
@@ -72,3 +73,5 @@ function render() {
 
 
 }
+// setting the slots with .textContent won't work, instead I have to use classList.
+//mdn classList property returns the CSS class names of an element
