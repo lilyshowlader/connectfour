@@ -1,0 +1,30 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* creating the board */
+.connect-four-board {
+  width: 420px;
+  height: 360px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* creating the slots */
+.connect-four-board > div {
+  height: 60px;
+  width: 60px;
+  background-color: pink;
+}
+
+/* differentiating between the players */
+.player-one {
+  background-color: greenyellow ;
+  border-radius: 30px;
+}
+
+.player-two {
+  background-color: orange;
+  border-radius: 30px;
+}
