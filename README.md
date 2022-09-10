@@ -13,10 +13,10 @@ Winner - either player one or two will win or the game is still in progress (nul
 One for the slots -
 One for the message displayed to the user
 One for the reset game button  -->
-
+<!-- 
 When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user.
 init()
-render() - note* the render function should run every single time a move is made
+render() - note* the render function should run every single time a move is made -->
 
 <!-- Figure out the required constants for the game
 Similar to tic-tac-toe, the constant for this game can be winningCombos.
