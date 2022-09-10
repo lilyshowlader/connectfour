@@ -40,3 +40,7 @@ body {
 .ground-level {
   display: none;
 }
+
+.playerone {
+  background-color: pink; 
+}

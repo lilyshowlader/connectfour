@@ -36,7 +36,8 @@ let winner
 // the winner can be player one/two or none depending on if game is still going/stalemate
 
 /*------------------------ Cached Element References ----------------------*/
-const slots = document.querySelectorAll("connect-four-board")
+const slots = document.querySelectorAll(".connect-four-board > div")
+console.log(slots)
 // accessing all of the divs (slots) on the connect four board to manipulate (node list)
 const displayMessage = document.querySelector("#display-message")
 // accessing the display message to manipulate when it is player 1/2 turn/win/tie
@@ -56,7 +57,7 @@ init()
 
 function init() {
   board =[
-    null, null, null, null, null, null, null,
+    1, null, -1, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
@@ -70,11 +71,15 @@ function init() {
 }
 
 function render() {
-  board.forEach(function()) {
-    
-  }
+  board.forEach(function(slot, idx) {
+    if (slot === 1) {
+      slots[idx].textContent = "P"
+    } else if (slot === -1) {
+      slots[idx].textContent = "O"
+    } else {
+      slots[idx].textContent = ''
+    }
+  })
+
 
 }
-// setting the slots with .textContent won't work, instead I have to use classList.
-//mdn classList property returns the CSS class names of an element
-// style.color
