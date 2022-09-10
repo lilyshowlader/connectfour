@@ -37,28 +37,6 @@ body {
 }
 
 
-
-/* githubcheck */
-/* gitcheck */
-
-/* creating the slots */
-/* .connect-four-board > div {
-  height: 60px;
-  width: 60px;
-  background-color: pink;
-  border: 1px solid black;
-} */
-
-/* differentiating between the players */
-/* .player-one {
-  background-color: greenyellow ;
-}
-
-.player-two {
-  background-color: orange;
-  */
-/* } */
-
 .ground-level {
   display: none;
 }
