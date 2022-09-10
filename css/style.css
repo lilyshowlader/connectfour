@@ -4,6 +4,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 /* creating the game board */
@@ -13,6 +14,7 @@ body {
   grid-template-rows: repeat(6, 10vmin);
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
+  margin: 0 auto; 
   border: 1px solid black;
 }
 
@@ -27,6 +29,14 @@ body {
   border-style: dotted;
 }
 
+
+#reset-button {
+  display: grid; 
+  width: 60px;
+  margin: 0 auto;
+}
+
+
 /* creating the slots */
 /* .connect-four-board > div {
   height: 60px;
@@ -36,14 +46,14 @@ body {
 } */
 
 /* differentiating between the players */
-.player-one {
+/* .player-one {
   background-color: greenyellow ;
 }
 
 .player-two {
   background-color: orange;
- 
-}
+  */
+/* } */
 
 .ground-level {
   display: none;
