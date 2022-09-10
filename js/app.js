@@ -70,7 +70,9 @@ function init() {
 }
 
 function render() {
-  
+  board.forEach(function()) {
+    
+  }
 
 }
 // setting the slots with .textContent won't work, instead I have to use classList.
