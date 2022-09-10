@@ -80,6 +80,22 @@ function render() {
       slots[idx].textContent = ''
     }
   })
-
+    if (!winner && turn === 1) {
+      displayMessage.textContent = "player one, it's time to play!"
+    } else if (!winner && turn === -1) {
+      displayMessage.textContent = "player two, it's time to play!"
+    }
+    if (winner === 1) {
+      displayMessage.textContent = "congrats player one, you won!"
+    } else if (winner === -1) {
+      displayMessage.textContent = "congrats player two, you won!"
+    } else if (winner = 'T') {
+      displayMessage.textContent = "uh oh, let's try again"
+    }
 
 }
+
+//what has to be updated every time a move is made? 
+//the slot has to be updated with the player choice
+//if there is no winner, we need to know who's turn it is
+// we need to know if there is a winner or if there is a tie
