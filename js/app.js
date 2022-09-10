@@ -70,8 +70,9 @@ function init() {
 }
 
 function render() {
-
+  
 
 }
 // setting the slots with .textContent won't work, instead I have to use classList.
 //mdn classList property returns the CSS class names of an element
+// style.color

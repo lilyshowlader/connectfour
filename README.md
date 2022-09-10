@@ -5,7 +5,7 @@ Pseudo Code for Connect Four
 <!-- Set the required variables used to track the state of the game
 Board - we have to track the changes made on the Connect Four board as the game is in progress. 
 There are 42 slots on the ConnectFour board (6x7) 
-Add 7 more divs to the BOTTOM of the connectFour board to act as the ground level 
+Add 7 more divs to the BOTTOM of the connectFour board to act as the ground level!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Turn - we have to track who’s turn it is/either player one or two.
 Winner - either player one or two will win or the game is still in progress (null) -->
 
@@ -14,8 +14,8 @@ One for the slots -
 One for the message displayed to the user
 One for the reset game button  -->
 
-<!-- When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user.
-init() -->
+When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user.
+init()
 render() - note* the render function should run every single time a move is made
 
 <!-- Figure out the required constants for the game
