@@ -43,7 +43,6 @@ const displayMessage = document.querySelector("#display-message")
 // accessing the display message to manipulate when it is player 1/2 turn/win/tie
 const resetButton = document.querySelector("#reset-button")
 // accessing the reset button to manipulate when user chooses to reset game
-let takenSlots = document.querySelector('.ground-level')
 const boardElement = document.querySelector(".connect-four-board")
 
 /*--------------------------- Event Listeners -----------------------------*/
@@ -105,13 +104,14 @@ function render() {
 // handleClick function
 // Build a handleClick function which will determine what happens with each click a player makes
 // clicking outside of the board shouldn't affect the board
+// No moves should be made after there is a winner
 // A player should not be able to click on a slot that is already full
 // A player should not be able to pick a slot unless the slot under it is full
-// No moves should be made after there is a winner
 
 
 function handleClick(evt) {
   let slotIndex = parseInt(evt.target.id) 
+  // slotIndex refers to slot selected
   if (isNaN(slotIndex)) {
     return 
   } 
@@ -120,10 +120,7 @@ function handleClick(evt) {
   }
   if (board[slotIndex]) {
     return 
-    // if there is something inside of that slotIndex, get out
-    // slotIndex refers to slot selected
   }
-  console.log(board[slotIndex + 7])
   if (board[slotIndex + 7] !== 1 && board[slotIndex + 7] !== -1) {
     if (slotIndex >= 35) {
     } else {
@@ -131,28 +128,18 @@ function handleClick(evt) {
     }
     // we are checking to see if something is below it 
   }
-
   if (!board[slotIndex + 7] && slotIndex < 35) {
     return
   }
   //saying if its empty & if its not the last row, then return (both statements have to be true)
-
-
   board[slotIndex] = playerTurn
   playerTurn = playerTurn * -1
   render()
-  //we want to check if the circle below us is full
-  // checking to see if it is 1 or negative one
-  // we are only checking for what is immediately below
-  // how do we place something in the bottom?
 }
-// 35 -41 / check if the index is between 35-41, we want to continue 
-// how do we check that we clicked on a bottom row 
 
-// let takenSlots = document.querySelector('.ground-level')
-// I want to see if the slot directly below it is taken 
 
-// if it is on the last row/because if last row is empty, then there is no row below it. if we choose something on the bo
-// if its on the bottom row let me place it there regardless. 
-//forcing computer to be 
+  // winner function
+  // this function figures out whether there is a winner, and this function runs after every single move
+  // we are using the winningCombos array - which is an array of arrays and it loops through the inner arrays until they get a combo (value) of 3 which equals a winner 
+
 
