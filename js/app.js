@@ -64,7 +64,6 @@ function init() {
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
-    null, null, null, null, null, null, null,
     null, null, null, null, null, null, null]
     console.log(board)
   playerTurn = 1
@@ -147,7 +146,13 @@ function handleClick(evt) {
   // winner function
   // this function figures out whether there is a winner, and this function runs after every single move
   // we are using the winningCombos array - which is an array of arrays and it loops through the inner arrays until they get a combo (value) of 3 which equals a winner 
+  // using the winningArrays array, which is an array of arrays, we are looping through the inner arrays until they get a combo (value) of 4, which equals a winner
 
   function getWinner() {
-
+    let bestCombo = []
+    winningArrays.forEach(function(combo){
+      let comboValue = board[combo[0]] + board[combo[1]] + board[combo[2]] + board[combo[3]]
+      bestCombo.push(Math.abs(comboValue))
+    })
+    
   }
