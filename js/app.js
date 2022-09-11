@@ -105,7 +105,6 @@ function render() {
 // handleClick function
 // Build a handleClick function which will determine what happens with each click a player makes
 // clicking outside of the board shouldn't affect the board
-
 // A player should not be able to click on a slot that is already full
 // A player should not be able to pick a slot unless the slot under it is full
 // No moves should be made after there is a winner
@@ -113,9 +112,7 @@ function render() {
 
 function handleClick(evt) {
   let slotIndex = parseInt(evt.target.id) 
-  console.log(slotIndex)
   if (isNaN(slotIndex)) {
-  console.log("hey") 
     return 
   } 
   if (winner) {
