@@ -107,6 +107,12 @@ function render() {
 // No moves should be made after there is a winner
 // A player should not be able to click on a slot that is already full
 // A player should not be able to pick a slot unless the slot under it is full
+      // for this line of code, we are adding 7 to the user selected slot (slotIndex) because that references the slot directly under the selected slot. This slot NEEDS to be full in order for the user to be able to select the slot above it. 
+      // any slot above 35 is reserved as the bottom row
+// when a slot is clicked, that changes who's turn it is - set the playerTurn
+// the turn can update by multiplying by -1 (this will switch between player one (1)and two (-1)
+// getWinner function to check if there is a winner
+// render() to update the board. every single time the board renders, the HTML is changing
 
 
 function handleClick(evt) {
@@ -142,4 +148,6 @@ function handleClick(evt) {
   // this function figures out whether there is a winner, and this function runs after every single move
   // we are using the winningCombos array - which is an array of arrays and it loops through the inner arrays until they get a combo (value) of 3 which equals a winner 
 
+  function getWinner() {
 
+  }
