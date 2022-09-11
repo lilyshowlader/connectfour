@@ -31,22 +31,25 @@ let board
 // the state of the board will change everytime the render function is called
 let playerTurn
 // 1 will represent player one and -1 will represent player 2.
-// ultimately I want player-one to be dark pink and player-two to be orange
+// the playerTurn will change every time the render function is called
 let winner
-// the winner can be player one/two or none depending on if game is still going/stalemate
+// the winner will have a boolean value (I think)
 
 /*------------------------ Cached Element References ----------------------*/
 const slots = document.querySelectorAll(".connect-four-board > div")
 console.log(slots)
-// accessing all of the divs (slots) on the connect four board to manipulate (node list)
+// accessing all of the divs (slots) on the connect four board (node list)
 const displayMessage = document.querySelector("#display-message")
 // accessing the display message to manipulate when it is player 1/2 turn/win/tie
 const resetButton = document.querySelector("#reset-button")
 // accessing the reset button to manipulate when user chooses to reset game
+let takenSlots = document.querySelector('.ground-level')
+const boardElement = document.querySelector(".connect-four-board")
 
 /*--------------------------- Event Listeners -----------------------------*/
 
-
+boardElement.addEventListener('click', handleClick)
+//we are taking advantage of bubbling
 
 /*------------------------------ Functions --------------------------------*/
 // When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user.
@@ -57,7 +60,7 @@ init()
 
 function init() {
   board =[
-    1, null, -1, null, null, null, null,
+    null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
@@ -70,22 +73,25 @@ function init() {
   render()
 }
 
+
+// render function
+// what has to be updated every time a move is made? 
+// the slot has to be updated with the player choice
+// if there is no winner, we need to display who's turn it is
+// we need to know if there is a winner/if there is a "tie" and display that to the user if there is one.
+
 function render() {
   board.forEach(function(slot, idx) {
     if (slot === 1) {
       slots[idx].textContent = "P"
     } else if (slot === -1) {
       slots[idx].textContent = "O"
-    } else {
-      slots[idx].textContent = ''
     }
   })
   if (!winner && playerTurn === 1) {
     displayMessage.textContent = "player one, it's time to play!"
-    console.log("if block is running")
   } else if (!winner && playerTurn === -1) {
     displayMessage.textContent = "player two, it's time to play!"
-    console.log("else if block is running ")
   }
   if (winner === 1) {
     displayMessage.textContent = "congrats player one, you won!"
@@ -96,8 +102,60 @@ function render() {
   }
 }
 
-//what has to be updated every time a move is made? 
-//the slot has to be updated with the player choice
-//if there is no winner, we need to know who's turn it is
-// we need to know if there is a winner/if the game is still going or if there is a tie
+// handleClick function
+// Build a handleClick function which will determine what happens with each click a player makes
+// clicking outside of the board shouldn't affect the board
+
+// A player should not be able to click on a slot that is already full
+// A player should not be able to pick a slot unless the slot under it is full
+// No moves should be made after there is a winner
+
+
+function handleClick(evt) {
+  let slotIndex = parseInt(evt.target.id) 
+  console.log(slotIndex)
+  if (isNaN(slotIndex)) {
+  console.log("hey") 
+    return 
+  } 
+  if (winner) {
+    return 
+  }
+  if (board[slotIndex]) {
+    return 
+    // if there is something inside of that slotIndex, get out
+    // slotIndex refers to slot selected
+  }
+  console.log(board[slotIndex + 7])
+  if (board[slotIndex + 7] !== 1 && board[slotIndex + 7] !== -1) {
+    if (slotIndex >= 35) {
+    } else {
+      return 
+    }
+    // we are checking to see if something is below it 
+  }
+
+  if (!board[slotIndex + 7] && slotIndex < 35) {
+    return
+  }
+  //saying if its empty & if its not the last row, then return (both statements have to be true)
+
+
+  board[slotIndex] = playerTurn
+  playerTurn = playerTurn * -1
+  render()
+  //we want to check if the circle below us is full
+  // checking to see if it is 1 or negative one
+  // we are only checking for what is immediately below
+  // how do we place something in the bottom?
+}
+// 35 -41 / check if the index is between 35-41, we want to continue 
+// how do we check that we clicked on a bottom row 
+
+// let takenSlots = document.querySelector('.ground-level')
+// I want to see if the slot directly below it is taken 
+
+// if it is on the last row/because if last row is empty, then there is no row below it. if we choose something on the bo
+// if its on the bottom row let me place it there regardless. 
+//forcing computer to be 
 

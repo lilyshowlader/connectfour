@@ -5,6 +5,7 @@ Pseudo Code for Connect Four
 <!-- Set the required variables used to track the state of the game
 Board - we have to track the changes made on the Connect Four board as the game is in progress. 
 There are 42 slots on the ConnectFour board (6x7) 
+INDEX START AT 0 ALWAYS 
 Add 7 more divs to the BOTTOM of the connectFour board to act as the ground level!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Turn - we have to track who’s turn it is/either player one or two.
 Winner - either player one or two will win or the game is still in progress (null) -->
