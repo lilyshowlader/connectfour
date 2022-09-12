@@ -139,6 +139,7 @@ function handleClick(evt) {
   //saying if its empty & if its not the last row, then return (both statements have to be true)
   board[slotIndex] = playerTurn
   playerTurn = playerTurn * -1
+  winner = getWinner()
   render()
 }
 
@@ -148,11 +149,20 @@ function handleClick(evt) {
   // we are using the winningCombos array - which is an array of arrays and it loops through the inner arrays until they get a combo (value) of 3 which equals a winner 
   // using the winningArrays array, which is an array of arrays, we are looping through the inner arrays until they get a combo (value) of 4, which equals a winner
 
+
   function getWinner() {
     let bestCombo = []
     winningArrays.forEach(function(combo){
       let comboValue = board[combo[0]] + board[combo[1]] + board[combo[2]] + board[combo[3]]
       bestCombo.push(Math.abs(comboValue))
     })
-    
+    let winnersCombo = bestCombo.some(function(value){
+      return value === 4
+    })
+    if (winnersCombo === true) {
+      return playerTurn * -1
+    } else if (!board.some(function(value){return value === null})){
+      return 'T'
+    }
+    return null
   }
