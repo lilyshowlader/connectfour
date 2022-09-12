@@ -40,6 +40,14 @@ body {
   display: none;
 }
 
-/* .playerone {
-  background-color: pink; 
-} */
+.playerone {
+  background-color: #EE2677; 
+}
+
+.playertwo {
+  background-color: #faa148;
+}
+
+.nada {
+  display: none;
+}

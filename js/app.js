@@ -81,9 +81,9 @@ function init() {
 function render() {
   board.forEach(function(slot, idx) {
     if (slot === 1) {
-      slots[idx].textContent = "P"
+      slots[idx].classList.add('playerone')
     } else if (slot === -1) {
-      slots[idx].textContent = "O"
+      slots[idx].classList.add('playertwo')
     } else {
       slots[idx].textContent = ''
     }
@@ -103,7 +103,7 @@ function render() {
     helluvaParty.play()
   } else if (winner === 'T') {
     displayMessage.textContent = "uh oh, let's try again"
-  }
+  } 
 }
 
 // handleClick function
