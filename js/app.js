@@ -85,7 +85,7 @@ function render() {
     } else if (slot === -1) {
       slots[idx].classList.add('playertwo')
     } else {
-      slots[idx].textContent = ''
+      slots[idx].className = ('slots')
     }
   })
   if (!winner && playerTurn === 1) {
