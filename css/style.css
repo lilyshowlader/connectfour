@@ -36,10 +36,6 @@ body {
   margin: 0 auto;
 }
 
-.ground-level {
-  display: none;
-}
-
 .playerone {
   background-color: #EE2677; 
 }
@@ -48,6 +44,3 @@ body {
   background-color: #faa148;
 }
 
-.nada {
-  display: none;
-}
