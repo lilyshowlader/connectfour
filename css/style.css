@@ -15,7 +15,7 @@ body {
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
   margin: 0 auto; 
-  border: 1px solid black;
+  /* border: 1px solid #E86252; */
 }
 
 
@@ -29,20 +29,25 @@ body {
   border-style: dotted;
 }
 
+p {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
 #pinksky {
   color: #EE2677;
 }
 
 #melon {
-  color: #EBB3A9
+  color: #EBB3A9;
 }
 
 #opal {
-  color: #E86252
+  color: #faa148;
 }
 
 #cycleman {
-  color: #E87EA1
+  color: #E87EA1;
 }
 
 #reset-button {
@@ -50,7 +55,9 @@ body {
   height: 40px;
   margin: 0 auto;
   font-family: 'DM Serif Display', serif;
-  background-color: #f69ab8;
+  background-color: #f0afc4;
+  border-radius: 35%;
+  border: 1px;
 }
 
 .playerone {
