@@ -97,10 +97,12 @@ function render() {
     displayMessage.textContent = "congrats player one, you won!"
     const helluvaParty = new Audio("../assets/audio/Helluva Party (2).mp3")
     helluvaParty.play()
+    confetti.start(22000)
   } else if (winner === -1) {
     displayMessage.textContent = "congrats player two, you won!"
     const helluvaParty = new Audio("../assets/audio/Helluva Party (2).mp3")
     helluvaParty.play()
+    confetti.start(22000)
   } else if (winner === 'T') {
     displayMessage.textContent = "uh oh, let's try again"
   } 
