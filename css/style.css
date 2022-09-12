@@ -29,11 +29,28 @@ body {
   border-style: dotted;
 }
 
+#pinksky {
+  color: #EE2677;
+}
+
+#melon {
+  color: #EBB3A9
+}
+
+#opal {
+  color: #E86252
+}
+
+#cycleman {
+  color: #E87EA1
+}
 
 #reset-button {
-  display: grid; 
-  width: 60px;
+  width: 80px;
+  height: 40px;
   margin: 0 auto;
+  font-family: 'DM Serif Display', serif;
+  background-color: #f69ab8;
 }
 
 .playerone {
