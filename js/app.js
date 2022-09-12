@@ -49,6 +49,7 @@ const boardElement = document.querySelector(".connect-four-board")
 
 boardElement.addEventListener('click', handleClick)
 //we are taking advantage of bubbling
+resetButton.addEventListener('click', init)
 
 /*------------------------------ Functions --------------------------------*/
 // When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user.
@@ -65,7 +66,6 @@ function init() {
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null]
-    console.log(board)
   playerTurn = 1
   winner = null
   render()
@@ -84,6 +84,8 @@ function render() {
       slots[idx].textContent = "P"
     } else if (slot === -1) {
       slots[idx].textContent = "O"
+    } else {
+      slots[idx].textContent = ''
     }
   })
   if (!winner && playerTurn === 1) {
