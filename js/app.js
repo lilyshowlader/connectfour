@@ -124,7 +124,7 @@ function render() {
 
 function handleClick(evt) {
   let slotIndex = parseInt(evt.target.id) 
-  // slotIndex refers to slot selected
+  // slotIndex refers to slot selected by the user 
   if (isNaN(slotIndex)) {
     return 
   } 
@@ -134,31 +134,29 @@ function handleClick(evt) {
   if (board[slotIndex]) {
     return 
   }
-  if (board[slotIndex + 7] !== 1 && board[slotIndex + 7] !== -1) {
-    if (slotIndex >= 35) {
-    } else {
-      return 
-    }
-    // we are checking to see if something is below it 
-  }
-  if (!board[slotIndex + 7] && slotIndex < 35) {
-    return
-  }
-  //saying if its empty & if its not the last row, then return (both statements have to be true)
-  // the line below in conjunction with the function will allow the user to select an index(slot) on the top row and the "token" will fall to the first available slot in that column 
-  const openSlot = correctPlacement()
-  board[openSlot] = playerTurn
+  const slotColumn = correctPlacement(slotIndex)
+  board[slotColumn] = playerTurn
   playerTurn = playerTurn * -1
   winner = getWinner()
   render()
 }
 
-  // this function will return the index of the available slots/spaces
-  // we want the openSlot to return the index
-  function correctPlacement() {
-    // use for loop
-    // refer to drawing where we are subtracting by 7
+  function correctPlacement(slotIndex) {
+    console.log(slotIndex + 35)
+    for (let i = slotIndex + 35; i >= 0; i -= 7) {
+      if (board[i] === null) {
+        return i
+      }
+    }
   }
+
+  // I have an array of 41 null elements & anytime I click on anywhere on my board, I am taking the index of what i clicked, and adding 35 to that value. 
+  // Out code starts at 35, if we click on 0. then it checks if that 35 is null. if it is, it returns that index (35). Then, if it is not, it's going to subtract 7 from i and then check if that is null. So now we are checking index 28 and then it repeats. it's going to do this until it finds a suitable place to put a slot/tile. 
+  // undefined is not null, which is why line 148 is important.
+
+
+
+
 
   // winner function
   // this function figures out whether there is a winner, and this function runs after every single move
