@@ -145,12 +145,20 @@ function handleClick(evt) {
     return
   }
   //saying if its empty & if its not the last row, then return (both statements have to be true)
-  board[slotIndex] = playerTurn
+  // the line below in conjunction with the function will allow the user to select an index(slot) on the top row and the "token" will fall to the first available slot in that column 
+  const openSlot = correctPlacement()
+  board[openSlot] = playerTurn
   playerTurn = playerTurn * -1
   winner = getWinner()
   render()
 }
 
+  // this function will return the index of the available slots/spaces
+  // we want the openSlot to return the index
+  function correctPlacement() {
+    // use for loop
+    // refer to drawing where we are subtracting by 7
+  }
 
   // winner function
   // this function figures out whether there is a winner, and this function runs after every single move

@@ -15,6 +15,7 @@ body {
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
   margin: 0 auto; 
+  justify-content: center;
   /* border: 1px solid #E86252; */
 }
 
