@@ -70,3 +70,31 @@ p {
   background-color: #faa148;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* 768px is a common "breakpoint" width for tablets */
+@media only screen and (min-width: 768px) {
+  .flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 650px;
+  }
+  
+  .flexbox-item-1 {
+    order: 1;
+  }
+  
+  .flexbox-item-2 {
+    order: 2;
+  }
+}

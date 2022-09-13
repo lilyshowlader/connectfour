@@ -114,8 +114,6 @@ function render() {
 // No moves should be made after there is a winner
 // A player should not be able to click on a slot that is already full
 // A player should not be able to pick a slot unless the slot under it is full
-      // for this line of code, we are adding 7 to the user selected slot (slotIndex) because that references the slot directly under the selected slot. This slot NEEDS to be full in order for the user to be able to select the slot above it. 
-      // any slot above 35 is reserved as the bottom row
 // when a slot is clicked, that changes who's turn it is - set the playerTurn
 // the turn can update by multiplying by -1 (this will switch between player one (1)and two (-1)
 // getWinner function to check if there is a winner
@@ -151,7 +149,7 @@ function handleClick(evt) {
   }
 
   // I have an array of 41 null elements & anytime I click on anywhere on my board, I am taking the index of what I clicked, and adding 35 to that value. 
-  // If we click on index 0, then add 35, i = 0. The loop checks to see if 35 is null. If it is, it returns that index (35). Then, if it is not, it's going to subtract 7 from i and then check if that is null. So now we are checking if index 28 and then it repeats. It's going to do this until it finds a suitable place to put a slot/tile. 
+  // If we click on index 0, then add 35, i = 0. The loop checks to see if 35 is null. If it is, it returns that index (35). Then, if it is not, it's going to subtract 7 from i and then check if that is null. So now we are checking if index 28 is null and then it repeats. It's going to do this until it finds a suitable place to put a slot/tile. 
   // if I select on index 7, then i becomes 42 (7 + 35). Since 42 does not exist, this number is undefined. undefined is not null, which is why loop would go again until it hits 35, which DOES exist in the board and IS null so the token can be placed there.
 
 
