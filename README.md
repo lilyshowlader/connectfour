@@ -8,7 +8,7 @@ This is the second game I have created while in the SEI course at General Assemb
 
 
 
-Here is a link to my game: https://app.netlify.com/sites/lilyshowladerconnectfour/overview
+<strong>Here is a link to my game</strong>: https://app.netlify.com/sites/lilyshowladerconnectfour/overview
 
 Phone view above:
 <img width="480" alt="Screen Shot 2022-09-14 at 6 04 05 PM" src="https://user-images.githubusercontent.com/111258832/190271096-f478c9fa-6a50-42e4-bdfe-23a73cc2a395.png">
