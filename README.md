@@ -24,10 +24,10 @@ Planning Materials:
 
 Pseudo Code for Connect Four
 
-1) Set the required variables used to track the state of the game.
-a. Board - We have to track the changes made on the Connect Four board as the game is in progress. There are 42 slots on the ConnectFour board (6x7) 
-b. Turn - Turn will represent either Player 1, or Player 2.
-c. Winner - The winner can either be Player 1 or Player 2. If the game is in progress, the winner is set to null.
+1) Set the required variables used to track the state of the game. <br/>
+a. Board - We have to track the changes made on the Connect Four board as the game is in progress. There are 42 slots on the ConnectFour board (6x7) <br/>
+b. Turn - Turn will represent either Player 1, or Player 2. <br/>
+c. Winner - The winner can either be Player 1 or Player 2. If the game is in progress, the winner is set to null. <br/>
 
 2) Store cached element used to manipulate HTML elements.
 a. Cached element reference for slots.
