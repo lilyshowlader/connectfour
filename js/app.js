@@ -149,7 +149,7 @@ function handleClick(evt) {
   }
 
   // I have an array of 41 null elements & anytime I click on anywhere on my board, I am taking the index of what I clicked, and adding 35 to that value. 
-  // If we click on index 0, then add 35, i = 0. The loop checks to see if 35 is null. If it is, it returns that index (35). Then, if it is not, it's going to subtract 7 from i and then check if that is null. So now we are checking if index 28 is null and then it repeats. It's going to do this until it finds a suitable place to put a slot/tile. 
+  // If we click on index 0, then add 35, i = 0. The loop checks to see if 35 is null. If it is, it returns that index (35). Then, if it is not, it's going to subtract 7 from i and then check if that is null. So now we are checking if index 28 is null and then it repeats. It's going to do this until it finds a suitable place to put a slot/token. 
   // if I select on index 7, then i becomes 42 (7 + 35). Since 42 does not exist, this number is undefined. undefined is not null, which is why loop would go again until it hits 35, which DOES exist in the board and IS null so the token can be placed there.
 
 
