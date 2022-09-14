@@ -54,7 +54,7 @@ e. No moves should be made after there is a winner <br/>
 7) Build a reset button to reset the game <br/>
 a. This button will call for the init function. <br/>
 
-
+<br/>
 Technologies used: <br/>
 1) VS Code <br/>
 2) GitHub <br/>
@@ -63,8 +63,10 @@ Technologies used: <br/>
 5) Javascript <br/>
   
 
+<br/>
 Next steps: <br/>
 1) Improve layout of game within media query <br/>
 2) Include a key to differentiate between Player One and Player Two <br/>
 3) Include a sound effect after each player's turn <br/>
 4) Animate the token drop <br/>
+5) Animate a bounce effect to winning message
