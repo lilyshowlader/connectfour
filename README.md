@@ -2,11 +2,23 @@
 
 
 Welcome to my ConnectFour game! This is the second game I have created while in the SEI course at General Assembly. I chose this game in order to improve on the skills I've learned while creating my first game, Tic Tac Toe.
+
 <img width="613" alt="Screen Shot 2022-09-14 at 5 44 18 PM" src="https://user-images.githubusercontent.com/111258832/190268257-0850f85e-c9a0-48b2-b584-db9b604b3a48.png">
 
 
 
 Here is a link to my game: https://app.netlify.com/sites/lilyshowladerconnectfour/overview
+
+Phone view:
+<img width="480" alt="Screen Shot 2022-09-14 at 6 04 05 PM" src="https://user-images.githubusercontent.com/111258832/190271096-f478c9fa-6a50-42e4-bdfe-23a73cc2a395.png">
+
+
+Desktop view: 
+<img width="1080" alt="Screen Shot 2022-09-14 at 6 03 22 PM" src="https://user-images.githubusercontent.com/111258832/190271005-30236a39-f3d4-49cf-b39e-ed2cd22e6513.png">
+
+Winner view:
+<img width="1163" alt="Screen Shot 2022-09-14 at 6 05 31 PM" src="https://user-images.githubusercontent.com/111258832/190271280-79988268-5a37-4965-a6d0-906fc9353447.png">
+
 
 Planning Materials:
 
