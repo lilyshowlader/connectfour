@@ -10,21 +10,22 @@ This is the second game I have created while in the SEI course at General Assemb
 
 <strong>Here is a link to my game</strong>: https://app.netlify.com/sites/lilyshowladerconnectfour/overview
 
-Phone view above:
+<strong>Phone view above:</strong>
 <img width="480" alt="Screen Shot 2022-09-14 at 6 04 05 PM" src="https://user-images.githubusercontent.com/111258832/190271096-f478c9fa-6a50-42e4-bdfe-23a73cc2a395.png">
 
 
-Desktop view below: 
+<strong>Desktop view below:</strong>
 <img width="1080" alt="Screen Shot 2022-09-14 at 6 03 22 PM" src="https://user-images.githubusercontent.com/111258832/190271005-30236a39-f3d4-49cf-b39e-ed2cd22e6513.png">
 
-Winner view:
+<strong>Winner view:</strong>
 <img width="1163" alt="Screen Shot 2022-09-14 at 6 05 31 PM" src="https://user-images.githubusercontent.com/111258832/190271280-79988268-5a37-4965-a6d0-906fc9353447.png">
 
-
+<br/>
+<br/>
+<br/>
 <strong>Planning Materials:</strong>
 
 <strong>Pseudo Code for Connect Four</strong>
-
 1) Set the required variables used to track the state of the game. <br/>
 a. Board - We have to track the changes made on the Connect Four board as the game is in progress. There are 42 slots on the ConnectFour board (6x7) <br/>
 b. Turn - Turn will represent either Player 1, or Player 2. <br/>
