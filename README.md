@@ -4,11 +4,15 @@
 <strong>Welcome to my ConnectFour game!</strong><br/>
 This is the second game I have created while in the SEI course at General Assembly. I chose this game in order to improve on the skills I've learned while creating my first game, Tic Tac Toe.
 
+<br/>
+<br/>
+
+<strong>Below is my wireframe:</strong>
 <img width="613" alt="Screen Shot 2022-09-14 at 5 44 18 PM" src="https://user-images.githubusercontent.com/111258832/190268257-0850f85e-c9a0-48b2-b584-db9b604b3a48.png">
 
 
 
-<strong>Here is a link to my game</strong>: https://app.netlify.com/sites/lilyshowladerconnectfour/overview
+<strong>Here is a link to my deployed game</strong>: https://app.netlify.com/sites/lilyshowladerconnectfour/overview
 
 <strong>Phone view above:</strong>
 <img width="480" alt="Screen Shot 2022-09-14 at 6 04 05 PM" src="https://user-images.githubusercontent.com/111258832/190271096-f478c9fa-6a50-42e4-bdfe-23a73cc2a395.png">
@@ -24,7 +28,7 @@ This is the second game I have created while in the SEI course at General Assemb
 <br/>
 <br/>
 <strong>Planning Materials:</strong>
-
+<br/>
 <strong>Pseudo Code for Connect Four</strong>
 1) Set the required variables used to track the state of the game. <br/>
 a. Board - We have to track the changes made on the Connect Four board as the game is in progress. There are 42 slots on the ConnectFour board (6x7) <br/>
