@@ -54,7 +54,7 @@ p {
 #reset-button {
   width: 80px;
   height: 40px;
-  margin: 0 auto;
+  margin-top: 10px;
   font-family: 'DM Serif Display', serif;
   background-color: #f0afc4;
   border-radius: 35%;
@@ -86,7 +86,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-top: 85px;
     height: 650px;
   }
   
