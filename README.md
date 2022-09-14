@@ -1,7 +1,8 @@
 # connectfour
 
 
-Welcome to my ConnectFour game! This is the second game I have created while in the SEI course at General Assembly. I chose this game in order to improve on the skills I've learned while creating my first game, Tic Tac Toe.
+Welcome to my ConnectFour game! <br/>
+This is the second game I have created while in the SEI course at General Assembly. I chose this game in order to improve on the skills I've learned while creating my first game, Tic Tac Toe.
 
 <img width="613" alt="Screen Shot 2022-09-14 at 5 44 18 PM" src="https://user-images.githubusercontent.com/111258832/190268257-0850f85e-c9a0-48b2-b584-db9b604b3a48.png">
 
@@ -29,41 +30,41 @@ a. Board - We have to track the changes made on the Connect Four board as the ga
 b. Turn - Turn will represent either Player 1, or Player 2. <br/>
 c. Winner - The winner can either be Player 1 or Player 2. If the game is in progress, the winner is set to null. <br/>
 
-2) Store cached element used to manipulate HTML elements.
-a. Cached element reference for slots.
-b. Cached element reference for message (displayed to the user)
-c. Cached element reference for reset button.
+2) Store cached element used to manipulate HTML elements. <br/>
+a. Cached element reference for slots. <br/>
+b. Cached element reference for message (displayed to the user) <br/>
+c. Cached element reference for reset button. <br/>
 
-3) When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user.
-a. init() - the init function initializes the state of the game.
-b. render() - the render function should run every single time a move is made.
+3) When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user. <br/>
+a. init() - the init function initializes the state of the game. <br/>
+b. render() - the render function should run every single time a move is made. <br/>
 
-4) Determine required constants for the game.
-a. The constant for this game is called winningArrays, which is an array of arrays that contains all of the winning combinations for Connect Four.
+4) Determine required constants for the game. <br/>
+a. The constant for this game is called winningArrays, which is an array of arrays that contains all of the winning combinations for Connect Four. <br/>
 
-5) Build a handleClick function which will determine what happens with each click a player makes
-a. Player 1 clicks - pick a color for player one
-b. Player 2 clicks - pick a color for player two 
-c. A player should not be able to click on a slot that is already full
-d. A player should not be able to click on a slot, unless the slots under it is full.
-e. No moves should be made after there is a winner
+5) Build a handleClick function which will determine what happens with each click a player makes <br/>
+a. Player 1 clicks - pick a color for player one <br/>
+b. Player 2 clicks - pick a color for player two <br/>
+c. A player should not be able to click on a slot that is already full <br/>
+d. A player should not be able to click on a slot, unless the slots under it is full. <br/>
+e. No moves should be made after there is a winner <br/>
 
-6) Build a function to determine if there is a winner, if the game is still going (null) or if it is stalemate.
+6) Build a function to determine if there is a winner, if the game is still going (null) or if it is stalemate. <br/>
 
-7) Build a reset button to reset the game
-a. This button will call for the init function. 
+7) Build a reset button to reset the game <br/>
+a. This button will call for the init function. <br/>
 
 
-Technologies used:
-1) VS Code
-2) GitHub
-3) HTML
-4) CSS
-5) Javascript
-6) 
+Technologies used: <br/>
+1) VS Code <br/>
+2) GitHub <br/>
+3) HTML <br/>
+4) CSS <br/>
+5) Javascript <br/>
+  
 
-Next steps:
-1) Improve layout of game within media query
-2) Include a key to differentiate between Player One and Player Two
-3) Include a sound effect after each player's turn
-4) Animate the token drop
+Next steps: <br/>
+1) Improve layout of game within media query <br/>
+2) Include a key to differentiate between Player One and Player Two <br/>
+3) Include a sound effect after each player's turn <br/>
+4) Animate the token drop <br/>
