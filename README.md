@@ -7,7 +7,8 @@ This is the second game I have created while in the SEI course at General Assemb
 <br/>
 <br/>
 
-<strong>Below is my wireframe:</strong>
+<strong>Below is my wireframe:</strong><br/>
+
 <img width="613" alt="Screen Shot 2022-09-14 at 5 44 18 PM" src="https://user-images.githubusercontent.com/111258832/190268257-0850f85e-c9a0-48b2-b584-db9b604b3a48.png">
 
 
