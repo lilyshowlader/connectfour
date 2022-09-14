@@ -1,7 +1,7 @@
 # connectfour
 
 
-Welcome to my ConnectFour game! <br/>
+<strong>Welcome to my ConnectFour game!</strong><br/>
 This is the second game I have created while in the SEI course at General Assembly. I chose this game in order to improve on the skills I've learned while creating my first game, Tic Tac Toe.
 
 <img width="613" alt="Screen Shot 2022-09-14 at 5 44 18 PM" src="https://user-images.githubusercontent.com/111258832/190268257-0850f85e-c9a0-48b2-b584-db9b604b3a48.png">
@@ -21,9 +21,9 @@ Winner view:
 <img width="1163" alt="Screen Shot 2022-09-14 at 6 05 31 PM" src="https://user-images.githubusercontent.com/111258832/190271280-79988268-5a37-4965-a6d0-906fc9353447.png">
 
 
-Planning Materials:
+<strong>Planning Materials:</strong>
 
-Pseudo Code for Connect Four
+<strong>Pseudo Code for Connect Four</strong>
 
 1) Set the required variables used to track the state of the game. <br/>
 a. Board - We have to track the changes made on the Connect Four board as the game is in progress. There are 42 slots on the ConnectFour board (6x7) <br/>
@@ -55,7 +55,7 @@ e. No moves should be made after there is a winner <br/>
 a. This button will call for the init function. <br/>
 
 <br/>
-Technologies used: <br/>
+<strong>Technologies used:</strong> <br/>
 1) VS Code <br/>
 2) GitHub <br/>
 3) HTML <br/>
@@ -64,7 +64,7 @@ Technologies used: <br/>
   
 
 <br/>
-Next steps: <br/>
+<strong>Next steps:</strong> <br/>
 1) Improve layout of game within media query <br/>
 2) Include a key to differentiate between Player One and Player Two <br/>
 3) Include a sound effect after each player's turn <br/>
