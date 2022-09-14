@@ -29,8 +29,8 @@ This is the second game I have created while in the SEI course at General Assemb
 <br/>
 <br/>
 <strong>Planning Materials:</strong>
-<br/>
-<strong>Pseudo Code for Connect Four</strong>
+
+<strong>Pseudo Code for Connect Four</strong><br/>
 1) Set the required variables used to track the state of the game. <br/>
 a. Board - We have to track the changes made on the Connect Four board as the game is in progress. There are 42 slots on the ConnectFour board (6x7) <br/>
 b. Turn - Turn will represent either Player 1, or Player 2. <br/>
