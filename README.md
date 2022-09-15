@@ -11,16 +11,6 @@ The goal of this two player game is to be the first to form a horizontal, vertic
 
 ### Here is a link to my deployed game : https://lilyshowladerconnectfour.netlify.app/
 
-<strong>Phone view above:</strong>
-<img width="480" alt="Screen Shot 2022-09-14 at 6 04 05 PM" src="https://user-images.githubusercontent.com/111258832/190271096-f478c9fa-6a50-42e4-bdfe-23a73cc2a395.png">
-
-
-<strong>Desktop view below:</strong>
-<img width="1080" alt="Screen Shot 2022-09-14 at 6 03 22 PM" src="https://user-images.githubusercontent.com/111258832/190271005-30236a39-f3d4-49cf-b39e-ed2cd22e6513.png">
-
-<strong>Winner view below:</strong>
-<img width="1163" alt="Screen Shot 2022-09-14 at 6 05 31 PM" src="https://user-images.githubusercontent.com/111258832/190271280-79988268-5a37-4965-a6d0-906fc9353447.png">
-
 
 ## Planning Materials:
 
@@ -72,6 +62,12 @@ The goal of this two player game is to be the first to form a horizontal, vertic
 - Git
   
 
+<strong>Mobile view above:</strong>
+<img width="480" alt="Screen Shot 2022-09-14 at 6 04 05 PM" src="https://user-images.githubusercontent.com/111258832/190271096-f478c9fa-6a50-42e4-bdfe-23a73cc2a395.png">
+
+
+<strong>Desktop view below:</strong>
+<img width="1080" alt="Screen Shot 2022-09-14 at 6 03 22 PM" src="https://user-images.githubusercontent.com/111258832/190271005-30236a39-f3d4-49cf-b39e-ed2cd22e6513.png">
 
 ## Next steps:
 - Improve layout of game within media query 
