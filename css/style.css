@@ -93,6 +93,7 @@ p {
   .flexbox-item-1 {
     order: 1;
     margin-bottom: 60px;
+    padding-right: 20px;
   }
   
   .flexbox-item-2 {

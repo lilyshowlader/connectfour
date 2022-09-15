@@ -73,6 +73,4 @@ a. This button will call for the init function. <br/>
 <strong>Next steps:</strong> <br/>
 1) Improve layout of game within media query <br/>
 2) Include a key to differentiate between Player One and Player Two <br/>
-3) Include a sound effect after each player's turn <br/>
-4) Animate the token drop <br/>
-5) Animate a bounce effect to winning message
+3) Animate the token drop <br/>
