@@ -67,7 +67,8 @@ The goal of this two player game is to be the first to form a horizontal, vertic
 
 
 <strong>Desktop view below:</strong>
-<img width="1080" alt="Screen Shot 2022-09-14 at 6 03 22 PM" src="https://user-images.githubusercontent.com/111258832/190271005-30236a39-f3d4-49cf-b39e-ed2cd22e6513.png">
+![Screen Shot 2022-09-15 at 2 11 20 PM](https://user-images.githubusercontent.com/111258832/190478688-624c47a3-db73-43a1-84bd-1829037c7319.png)
+
 
 ## Next steps:
 - Improve layout of game within media query 
