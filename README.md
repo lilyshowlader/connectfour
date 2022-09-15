@@ -26,7 +26,7 @@ The goal of this two player game is to be the first to form a horizontal, vertic
    - Turn - Turn will represent either Player 1, or Player 2. 
    - Winner - The winner can either be Player 1 or Player 2. If the game is in progress, the winner is set to null. 
 
-2) Store cached element used to manipulate HTML elements. 
+2) Store cached element references used to manipulate HTML elements. 
    - Cached element reference for slots. 
    - Cached element reference for message.
    - Cached element reference for reset button. 
