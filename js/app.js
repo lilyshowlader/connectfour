@@ -45,6 +45,8 @@ const resetButton = document.querySelector("#reset-button")
 // accessing the reset button to manipulate when user chooses to reset game
 const boardElement = document.querySelector(".connect-four-board")
 
+const messageBounce = document.querySelector('#display-message');
+
 /*--------------------------- Event Listeners -----------------------------*/
 
 boardElement.addEventListener('click', handleClick)
@@ -59,6 +61,7 @@ resetButton.addEventListener('click', init)
 init()
 
 function init() {
+  messageBounce.className = "";
   board =[
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
@@ -79,6 +82,7 @@ function init() {
 // we need to know if there is a winner/if there is a "tie" and display that to the user if there is one.
 
 function render() {
+
   board.forEach(function(slot, idx) {
     if (slot === 1) {
       slots[idx].classList.add('playerone')
@@ -98,11 +102,13 @@ function render() {
     pop.play()
   }
   if (winner === 1) {
+    messageBounce.className = 'animate__animated animate__bounce'
     displayMessage.textContent = "congrats player one, you won!"
     const helluvaParty = new Audio("../assets/audio/Helluva Party (2).mp3")
     helluvaParty.play()
     confetti.start(22000)
   } else if (winner === -1) {
+    messageBounce.className = 'animate__animated animate__bounce'
     displayMessage.textContent = "congrats player two, you won!"
     const helluvaParty = new Audio("../assets/audio/Helluva Party (2).mp3")
     helluvaParty.play()
