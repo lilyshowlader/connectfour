@@ -67,8 +67,9 @@ a. This button will call for the init function. <br/>
 3) HTML <br/>
 4) CSS <br/>
 5) Javascript <br/>
-6) Whimsical
-7) Youtube/Youtube to MP3 converter 
+6) Whimsical<br/>
+7) Youtube/Youtube to MP3 converter <br/>
+8) Git<br/>
   
 
 <br/>
