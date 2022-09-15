@@ -25,6 +25,7 @@ let winningArrays = [
   [11, 18, 25, 32], [12, 19, 26, 33], [13, 20, 27, 34] 
   ]; 
 
+
 /*---------------------------- Variables (state) --------------------------*/
 // the variables below will change depending on user interaction 
 let board
@@ -35,6 +36,7 @@ let playerTurn
 let winner
 // the winner will have a boolean value (I think)
 
+
 /*------------------------ Cached Element References ----------------------*/
 const slots = document.querySelectorAll(".connect-four-board > div")
 // accessing all of the divs (slots) on the connect four board (node list)
@@ -43,14 +45,14 @@ const displayMessage = document.querySelector("#display-message")
 const resetButton = document.querySelector("#reset-button")
 // accessing the reset button to manipulate when user chooses to reset game
 const boardElement = document.querySelector(".connect-four-board")
-
 const messageBounce = document.querySelector('#display-message');
 
-/*--------------------------- Event Listeners -----------------------------*/
 
+/*--------------------------- Event Listeners -----------------------------*/
 boardElement.addEventListener('click', handleClick)
 //we are taking advantage of bubbling
 resetButton.addEventListener('click', init)
+
 
 /*------------------------------ Functions --------------------------------*/
 // When the game loads, initialize the state of the game and call a function to render this game state. The state of the game should be rendered/displayed to the user.
@@ -120,14 +122,13 @@ function render() {
 
 // handleClick function
 // Build a handleClick function which will determine what happens with each click a player makes
-// clicking outside of the board shouldn't affect the board
+// Clicking outside of the board shouldn't affect the board
 // No moves should be made after there is a winner
 // A player should not be able to click on a slot that is already full
 // A player should not be able to pick a slot unless the slot under it is full
 // when a slot is clicked, that changes who's turn it is - set the playerTurn
 // the turn can update by multiplying by -1 (this will switch between player one (1)and two (-1)
-// getWinner function to check if there is a winner
-// render() to update the board. every single time the board renders, the HTML is changing
+
 
 function handleClick(evt) {
   let slotIndex = parseInt(evt.target.id) 
@@ -156,28 +157,29 @@ function correctPlacement(slotIndex) {
   }
 }
 
-  // I have an array of 41 null elements & anytime I click on anywhere on my board, I am taking the index of what I clicked, and adding 35 to that value. 
-  // If we click on index 0, then add 35, i = 0. The loop checks to see if 35 is null. If it is, it returns that index (35). Then, if it is not, it's going to subtract 7 from i and then check if that is null. So now we are checking if index 28 is null and then it repeats. It's going to do this until it finds a suitable place to put a slot/token. 
-  // if I select on index 7, then i becomes 42 (7 + 35). Since 42 does not exist, this number is undefined. undefined is not null, which is why loop would go again until it hits 35, which DOES exist in the board and IS null so the token can be placed there.
+// I have an array of 41 null elements & anytime I click on anywhere on my board, I am taking the index of what I clicked, and adding 35 to that value. 
+// If we click on index 0, then add 35, i = 0. The loop checks to see if 35 is null. If it is, it returns that index (35). Then, if it is not, it's going to subtract 7 from i and then check if that is null. So now we are checking if index 28 is null and then it repeats. It's going to do this until it finds a suitable place to put a slot/token. 
+// if I select on index 7, then i becomes 42 (7 + 35). Since 42 does not exist, this number is undefined. undefined is not null, which is why loop would go again until it hits 35, which DOES exist in the board and IS null so the token can be placed there.
 
 
-   // winner function
-  // this function figures out whether there is a winner, and this function runs after every single move
-  // using the winningArrays array, which is an array of arrays, we are looping through the inner arrays until they get a combo (value) of 4, which equals a winner
 
-  function getWinner() {
-    let bestCombo = []
-    winningArrays.forEach(function(combo){
-      let comboValue = board[combo[0]] + board[combo[1]] + board[combo[2]] + board[combo[3]]
-      bestCombo.push(Math.abs(comboValue))
-    })
-    let winnersCombo = bestCombo.some(function(value){
-      return value === 4
-    })
-    if (winnersCombo === true) {
-      return playerTurn * -1
-    } else if (!board.some(function(value){return value === null})){
-      return 'T'
-    }
-    return null
+// winner function
+// this function figures out whether there is a winner, and this function runs after every single move
+// using the winningArrays array, which is an array of arrays, we are looping through the inner arrays until they get a combo (value) of 4, which equals a winner
+
+function getWinner() {
+  let bestCombo = []
+  winningArrays.forEach(function(combo){
+    let comboValue = board[combo[0]] + board[combo[1]] + board[combo[2]] + board[combo[3]]
+    bestCombo.push(Math.abs(comboValue))
+  })
+  let winnersCombo = bestCombo.some(function(value){
+    return value === 4
+  })
+  if (winnersCombo === true) {
+    return playerTurn * -1
+  } else if (!board.some(function(value){return value === null})){
+    return 'T'
   }
+  return null
+}
