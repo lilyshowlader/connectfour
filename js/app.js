@@ -90,8 +90,12 @@ function render() {
   })
   if (!winner && playerTurn === 1) {
     displayMessage.textContent = "player one, it's time to play!"
+    const pop = new Audio("../assets/audio/pop.wav")
+    pop.play()
   } else if (!winner && playerTurn === -1) {
     displayMessage.textContent = "player two, it's time to play!"
+    const pop = new Audio("../assets/audio/pop.wav")
+    pop.play()
   }
   if (winner === 1) {
     displayMessage.textContent = "congrats player one, you won!"
