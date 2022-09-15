@@ -1,7 +1,7 @@
 # connectfour*
 
 
-## Welcome to my connectfour game!
+## Welcome to my connectfour* game!
 This is the second game I have created while in the SEI course at General Assembly. I chose this game in order to improve on the skills I've learned while creating my first game, Tic Tac Toe.
 The goal of this two player game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens.
 <br/>
@@ -18,7 +18,7 @@ The goal of this two player game is to be the first to form a horizontal, vertic
 <strong>Desktop view below:</strong>
 <img width="1080" alt="Screen Shot 2022-09-14 at 6 03 22 PM" src="https://user-images.githubusercontent.com/111258832/190271005-30236a39-f3d4-49cf-b39e-ed2cd22e6513.png">
 
-<strong>Winner view:</strong>
+<strong>Winner view below:</strong>
 <img width="1163" alt="Screen Shot 2022-09-14 at 6 05 31 PM" src="https://user-images.githubusercontent.com/111258832/190271280-79988268-5a37-4965-a6d0-906fc9353447.png">
 
 
