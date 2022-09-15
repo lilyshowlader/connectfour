@@ -37,7 +37,6 @@ let winner
 
 /*------------------------ Cached Element References ----------------------*/
 const slots = document.querySelectorAll(".connect-four-board > div")
-console.log(slots)
 // accessing all of the divs (slots) on the connect four board (node list)
 const displayMessage = document.querySelector("#display-message")
 // accessing the display message to manipulate when it is player 1/2 turn/win/tie
@@ -118,6 +117,7 @@ function render() {
   } 
 }
 
+
 // handleClick function
 // Build a handleClick function which will determine what happens with each click a player makes
 // clicking outside of the board shouldn't affect the board
@@ -128,7 +128,6 @@ function render() {
 // the turn can update by multiplying by -1 (this will switch between player one (1)and two (-1)
 // getWinner function to check if there is a winner
 // render() to update the board. every single time the board renders, the HTML is changing
-
 
 function handleClick(evt) {
   let slotIndex = parseInt(evt.target.id) 
@@ -149,28 +148,22 @@ function handleClick(evt) {
   render()
 }
 
-  function correctPlacement(slotIndex) {
-    console.log(slotIndex + 35)
-    for (let i = slotIndex + 35; i >= 0; i -= 7) {
-      if (board[i] === null) {
-        return i
-      }
+function correctPlacement(slotIndex) {
+  for (let i = slotIndex + 35; i >= 0; i -= 7) {
+    if (board[i] === null) {
+      return i
     }
   }
+}
 
   // I have an array of 41 null elements & anytime I click on anywhere on my board, I am taking the index of what I clicked, and adding 35 to that value. 
   // If we click on index 0, then add 35, i = 0. The loop checks to see if 35 is null. If it is, it returns that index (35). Then, if it is not, it's going to subtract 7 from i and then check if that is null. So now we are checking if index 28 is null and then it repeats. It's going to do this until it finds a suitable place to put a slot/token. 
   // if I select on index 7, then i becomes 42 (7 + 35). Since 42 does not exist, this number is undefined. undefined is not null, which is why loop would go again until it hits 35, which DOES exist in the board and IS null so the token can be placed there.
 
 
-
-
-
-  // winner function
+   // winner function
   // this function figures out whether there is a winner, and this function runs after every single move
-  // we are using the winningCombos array - which is an array of arrays and it loops through the inner arrays until they get a combo (value) of 3 which equals a winner 
   // using the winningArrays array, which is an array of arrays, we are looping through the inner arrays until they get a combo (value) of 4, which equals a winner
-
 
   function getWinner() {
     let bestCombo = []

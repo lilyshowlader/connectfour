@@ -13,7 +13,7 @@ This is the second game I have created while in the SEI course at General Assemb
 
 
 
-<strong>Here is a link to my deployed game</strong>: https://app.netlify.com/sites/lilyshowladerconnectfour/overview
+<strong>Here is a link to my deployed game</strong>: https://lilyshowladerconnectfour.netlify.app/
 
 <strong>Phone view above:</strong>
 <img width="480" alt="Screen Shot 2022-09-14 at 6 04 05 PM" src="https://user-images.githubusercontent.com/111258832/190271096-f478c9fa-6a50-42e4-bdfe-23a73cc2a395.png">
@@ -67,6 +67,8 @@ a. This button will call for the init function. <br/>
 3) HTML <br/>
 4) CSS <br/>
 5) Javascript <br/>
+6) Whimsical
+7) Youtube/Youtube to MP3 converter 
   
 
 <br/>
